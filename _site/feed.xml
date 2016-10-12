@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Genesys Impact</title>
-    <description>Creative engineers with a diverse background in design, development, mobile, and network technologies. Based in Washington DC</description>
-    <link>http://genesysimpact.com/</link>
-    <atom:link href="http://genesysimpact.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 10 Oct 2016 12:48:05 -0400</pubDate>
-    <lastBuildDate>Mon, 10 Oct 2016 12:48:05 -0400</lastBuildDate>
+    <title>Papermaker</title>
+    <description>Easily create websites without code.</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 11 Oct 2016 23:54:32 -0400</pubDate>
+    <lastBuildDate>Tue, 11 Oct 2016 23:54:32 -0400</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -27,8 +27,8 @@
 
 </description>
         <pubDate>Mon, 21 Mar 2016 18:03:54 -0400</pubDate>
-        <link>http://genesysimpact.com/jekyll/update/2016/03/21/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://genesysimpact.com/jekyll/update/2016/03/21/welcome-to-jekyll.html</guid>
+        <link>/jekyll/update/2016/03/21/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">/jekyll/update/2016/03/21/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
