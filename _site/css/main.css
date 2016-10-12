@@ -20,10 +20,10 @@ h1, h2, h3, h4, h5 {
 
 a {
   transition: ease all .1s;
-  color: #774ea3; }
+  color: #2f87ff; }
   a:hover {
     text-decoration: none;
-    color: #d6afff; }
+    color: #31ccff; }
 
 p {
   font-weight: 100;
@@ -35,7 +35,7 @@ h2 {
   margin: 0; }
 
 .page-divider {
-  border-bottom: 2px solid #5d3177;
+  border-bottom: 2px solid #145cbf;
   margin: 0 auto;
   width: 80px; }
 
@@ -43,7 +43,9 @@ h2 {
   padding-top: 80px;
   padding-bottom: 80px; }
   .page-block p {
-    font-size: 18px; }
+    color: #808080;
+    margin-top: 40px;
+    font-size: 22px; }
 
 .inner-block {
   padding-top: 80px; }
@@ -64,14 +66,14 @@ h2 {
   font-size: 16px;
   padding: 6px 18px;
   font-weight: bold;
-  border: 2px solid #774ea3;
-  color: #774ea3;
+  border: 2px solid #2f87ff;
+  color: #2f87ff;
   transition: all ease .2s;
   background-color: transparent; }
 
 .btn-md:hover {
-  border-color: #d6afff;
-  color: #d6afff; }
+  border-color: #31ccff;
+  color: #31ccff; }
 
 .btn-gray {
   background-color: #787a80;
@@ -123,43 +125,43 @@ h2 {
 
 .btn-white {
   border: 2px solid #fff;
-  color: #774ea3;
+  color: #2f87ff;
   background-color: #fff; }
 
 .btn-white:hover {
-  color: #774ea3;
-  border-color: #d6afff;
-  background-color: #d6afff; }
+  color: #2f87ff;
+  border-color: #31ccff;
+  background-color: #31ccff; }
 
-.btn-white-outline {
+.btn-blue-outline {
   color: #fff;
-  border: 2px solid #fff;
+  border: 2px solid #31ccff;
   background-color: transparent; }
 
-.btn-white-outline:hover {
-  color: #d6afff;
-  border-color: #d6afff;
-  background-color: transparent; }
-
-.btn-light-purple-outline {
-  color: #d6afff;
-  border: 2px solid #d6afff;
-  background-color: transparent; }
-
-.btn-light-purple-outline:hover {
+.btn-blue-outline:hover {
   color: #fff;
-  border-color: #fff;
+  border-color: #2f87ff;
   background-color: transparent; }
+
+.btn-blue {
+  color: #fff;
+  border: 2px solid #31ccff;
+  background-color: #31ccff; }
+
+.btn-blue:hover {
+  color: #fff;
+  border-color: #2f87ff;
+  background-color: #2f87ff; }
 
 .btn-prp {
-  background-color: #774ea3;
-  border-color: #774ea3;
+  background-color: #2f87ff;
+  border-color: #2f87ff;
   color: white;
   transition: background-color ease 0.3s, border-color ease 0.3s; }
 
 .btn-prp:hover {
-  background-color: #5d3177;
-  border-color: #5d3177;
+  background-color: #145cbf;
+  border-color: #145cbf;
   color: white; }
 
 .btn-prp-clear {
@@ -175,7 +177,7 @@ h2 {
 
 /* LANDING PAGE */
 .hero {
-  background-color: #5d3177;
+  background-color: #145cbf;
   padding: 180px 0;
   height: 100%;
   text-align: center; }
@@ -190,6 +192,17 @@ h2 {
     text-decoration: none; }
   .hero a:hover {
     color: #fff; }
+
+.hero-small {
+  background-color: #4f4f4f;
+  padding: 80px 0;
+  height: 100%;
+  text-align: center; }
+  .hero-small h2 {
+    line-height: 1.5;
+    color: #fff; }
+  .hero-small .btn {
+    margin-top: 40px; }
 
 .gi-success-wrap {
   background-color: #4f4f4f; }
@@ -251,15 +264,15 @@ h2 {
   }*/ }
   .gi-market .fa {
     font-size: 30px;
-    color: #774ea3;
+    color: #2f87ff;
     margin-bottom: 20px; }
   .gi-market h4 {
     font-size: 30px;
     color: #808080; }
   .gi-market:hover {
-    border-color: #d6afff; }
+    border-color: #31ccff; }
     .gi-market:hover h4 {
-      color: #774ea3; }
+      color: #2f87ff; }
 
 .about-container {
   padding-bottom: 50px; }
@@ -322,10 +335,10 @@ h2 {
   display: inline;
   margin: 0 5px;
   text-transform: uppercase;
-  color: #d6afff; }
+  color: #31ccff; }
 
 .hero ul li a {
-  color: #d6afff; }
+  color: #31ccff; }
 
 .landing-jobs ul {
   list-style: none; }
@@ -443,7 +456,7 @@ h2 {
   color: #333;
   font-size: 16px;
   text-decoration: none;
-  border-left: 2px solid #774ea3;
+  border-left: 2px solid #2f87ff;
   background-color: #fff; }
 
 .nav-pills > li > a:hover {
@@ -451,7 +464,7 @@ h2 {
   font-size: 16px;
   text-decoration: none;
   background-color: #f7f7f7;
-  border-left: 2px solid #774ea3; }
+  border-left: 2px solid #2f87ff; }
 
 /* [END] Inactive Pills */
 /* Active Pills */
@@ -460,35 +473,35 @@ h2 {
   transition: ease all .3s;
   font-size: 15px;
   color: #333;
-  border-left: 2px solid #5d3177;
+  border-left: 2px solid #145cbf;
   background-color: #fff; }
 
 .nav-pills > li.active > a:focus {
   color: #333;
   background-color: #fff;
-  border-left: 2px solid #5d3177; }
+  border-left: 2px solid #145cbf; }
 
 .nav-pills > li.active > a:hover {
   color: #333;
   background-color: #f7f7f7;
-  border-left: 2px solid #5d3177; }
+  border-left: 2px solid #145cbf; }
 
 /* [END] Active Pills */
 .breadcrumb-wrap {
-  background-color: #5d3177;
+  background-color: #145cbf;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   padding: 8px 0;
-  color: #d6afff; }
+  color: #31ccff; }
 
 .bc-item {
   font-size: 16px;
   margin-right: 10px; }
   .bc-item a {
     transition: ease all .2s;
-    color: #d6afff;
+    color: #31ccff;
     text-decoration: none; }
   .bc-item a:hover {
     color: #fff; }
@@ -575,7 +588,7 @@ h2 {
 /* FOOTER SECTION */
 .footer {
   background-color: #363636;
-  padding: 80px 0px 20px;
+  padding: 40px 0px 40px;
   color: #fff;
   line-height: 1.8; }
   .footer .footer-brand {
@@ -590,13 +603,12 @@ h2 {
       color: #fff; }
   .footer h5 {
     font-weight: bold;
-    color: #d6afff;
+    color: #31ccff;
     text-transform: uppercase;
     font-size: 16px;
     margin-bottom: 20px; }
   .footer .copyright {
-    color: #ccc;
-    padding-top: 80px; }
+    color: #ccc; }
 
 /* NAVBAR STYLES */
 .navbar-default {
@@ -616,27 +628,10 @@ h2 {
 .navbar-default .navbar-nav > li > a {
   text-transform: uppercase;
   background-color: transparent;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 17px;
+  padding-bottom: 17px;
   color: #333;
   transition: background-color ease 0.3s, color ease 0.3s; }
-
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-  color: #333;
-  background-color: #f7f7f7; }
-
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-  color: #333;
-  background-color: #eccafb; }
-
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:hover,
-.navbar-default .navbar-nav > .open > a:focus {
-  color: #333;
-  background-color: #f7f7f7; }
 
 .navbar-default .navbar-nav .open .dropdown-menu {
   text-transform: uppercase;
