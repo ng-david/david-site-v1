@@ -134,7 +134,7 @@ h2 {
   background-color: #31ccff; }
 
 .btn-blue-outline {
-  color: #fff;
+  color: #31ccff;
   border: 2px solid #31ccff;
   background-color: transparent; }
 
@@ -177,14 +177,15 @@ h2 {
 
 /* LANDING PAGE */
 .hero {
-  background-color: #145cbf;
-  padding: 180px 0;
+  background-color: #fff;
+  padding: 120px 0 0 0;
   height: 100%;
+  overflow: hidden;
   text-align: center; }
   .hero h1 {
     font-size: 72px;
     line-height: 1.5;
-    color: #fff; }
+    color: #333; }
   .hero a {
     transition: ease all .15s;
     font-weight: normal;
@@ -192,6 +193,13 @@ h2 {
     text-decoration: none; }
   .hero a:hover {
     color: #fff; }
+  .hero img {
+    max-width: 100%;
+    width: 900px;
+    margin: 80px auto 0;
+    -webkit-box-shadow: 0px 22px 100px -12px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 0px 22px 100px -12px rgba(0, 0, 0, 0.28);
+    box-shadow: 0px 22px 100px -12px rgba(0, 0, 0, 0.28); }
 
 .hero-small {
   background-color: #4f4f4f;

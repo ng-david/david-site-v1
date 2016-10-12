@@ -150,7 +150,7 @@ h2 {
 }
 
 .btn-blue-outline {
-  color: #fff;
+  color: $pm-light-blue;
   border: 2px solid $pm-light-blue;
   background-color: transparent;
 }
@@ -206,14 +206,15 @@ h2 {
   //-moz-background-size: cover;
   //-o-background-size: cover;
   //background-size: cover;
-  background-color: $pm-dark-blue;
-  padding: 180px 0;
+  background-color: #fff;
+  padding: 120px 0 0 0;
   height: 100%;
+  overflow: hidden;
   text-align: center;
   h1 {
     font-size: 72px;
     line-height: 1.5;
-    color: #fff;
+    color: #333;
   }
   a {
     transition: ease all .15s;
@@ -223,6 +224,14 @@ h2 {
   }
   a:hover {
     color: #fff;
+  }
+  img {
+    max-width: 100%;
+    width: 900px;
+    margin: 80px auto 0;
+    -webkit-box-shadow: 0px 22px 100px -12px rgba(0,0,0,0.28);
+    -moz-box-shadow: 0px 22px 100px -12px rgba(0,0,0,0.28);
+    box-shadow: 0px 22px 100px -12px rgba(0,0,0,0.28);
   }
 }
 .hero-small {
