@@ -14,10 +14,12 @@
         <ul class="nav navbar-nav navbar-right">
           <!-- <li><a href="{{ site.baseurl }}/success-stories">Success Stories</a></li> -->
           <li>
-            <a href="{{ site.baseurl }}/missing"><button class="btn btn-lg btn-white btn-blue">Start Free Trial</button></a>
+            <a onclick="ga('send', {'hitType': 'event', 'eventCategory': 'buttonToGetStarted', 'eventAction': 'clickedOnButton', 'eventLabel': 'CTAbtn' });
+  " href="{{ site.baseurl }}/missing"><button class="btn btn-lg btn-white btn-blue">Start Free Trial</button></a>
           </li>
           <li>
-            <a href="{{ site.baseurl }}/missing"><button class="btn btn-lg btn-blue-outline">Buy Now</button></a>
+            <a onclick="ga('send', {'hitType': 'event', 'eventCategory': 'buttonToGetStarted', 'eventAction': 'clickedOnButton', 'eventLabel': 'CTAbtn' });
+  " href="{{ site.baseurl }}/missing"><button class="btn btn-lg btn-blue-outline">Buy Now</button></a>
           </li>
         </ul>
       </div>
