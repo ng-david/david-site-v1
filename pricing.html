@@ -22,16 +22,27 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="col-md-4 col-md-offset-2">
-        <h2 style="color: #ccc" class="text-center">Free Trial</h2>
+        <h2 style="color: #ccc" class="text-center">Free Trial</h2><br>
+        <div class="text-center">
+          <a onclick="ga('send', {'hitType': 'event', 'eventCategory': 'buttonToGetStarted', 'eventAction': 'clickedOnButton', 'eventLabel': 'CTAbtn' });
+  " href="{{ site.baseurl }}/missing"><button class="btn btn-lg btn-white btn-blue">Start Free Trial</button></a>
         <p class="text-center">
           <strong>30 day free trial</strong>
           <br>
           Try Papermaker with no restrictions, no credit cards, and no fees for 30 days
-
         </p>
+
+
+        </div>
+
       </div>
       <div class="col-md-4">
-        <h2 style="color: #31ccff" class="text-center">Premium</h2>
+        <h2 style="color: #31ccff" class="text-center">Premium</h2><br>
+        <div class="text-center">
+          <a onclick="ga('send', {'hitType': 'event', 'eventCategory': 'buttonToBuy', 'eventAction': 'clickedOnButton', 'eventLabel': 'BUYbtn' });
+  " href="{{ site.baseurl }}/missing"><button class="btn btn-lg btn-blue-outline">Buy Now</button></a>
+        </div>
+
         <p class="text-center">
           <strong>$8 per month</strong>
           <br>
@@ -45,6 +56,7 @@ layout: default
           <br>
           Unlimited publishing
         </p>
+
       </div>
     </div>
   </div>
