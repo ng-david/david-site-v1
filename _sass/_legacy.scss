@@ -233,9 +233,14 @@ h2 {
   text-align: center;
   h1 {
     margin-top: 12px;
-    font-size: 72px;
     line-height: 1.5;
     color: #fff;
+    @media (min-width: 768px) {
+      font-size: 72px;
+    }
+    @media (max-width: 767px) {
+      font-size: 48px;
+    }
   }
   a {
     transition: ease all .15s;

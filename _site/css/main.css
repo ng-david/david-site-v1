@@ -207,9 +207,14 @@ h2 {
   text-align: center; }
   .hero h1 {
     margin-top: 12px;
-    font-size: 72px;
     line-height: 1.5;
     color: #fff; }
+    @media (min-width: 768px) {
+      .hero h1 {
+        font-size: 72px; } }
+    @media (max-width: 767px) {
+      .hero h1 {
+        font-size: 48px; } }
   .hero a {
     transition: ease all .15s;
     font-weight: normal;
