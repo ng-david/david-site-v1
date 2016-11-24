@@ -4,12 +4,65 @@
 @import url("https://fonts.googleapis.com/css?family=News+Cycle:700");
 .cool-bg {
   background: url("../images/fes.jpg") no-repeat fixed;
-  background-size: 100%; }
+  background-size: cover; }
+
+.form-stuff input {
+  outline: none !important;
+  border: none;
+  border-bottom: 2px solid #e3e3e3 !important; }
+
+.nav2 {
+  min-height: 80px;
+  max-height: 80px;
+  padding: 20px 0; }
+  .nav2 a {
+    position: fixed; }
+    .nav2 a h1 {
+      font-size: 40px;
+      transition: ease all .1s;
+      color: #ccc !important; }
+      .nav2 a h1:hover {
+        opacity: .5; }
+
+.sect {
+  padding: 80px 80px; }
+  .sect .list h2 {
+    line-height: 1.5; }
+  .sect .list h3 {
+    line-height: 1.5; }
+  .sect .list p {
+    font-size: 18px; }
+  .sect img {
+    max-width: 100%;
+    padding: 80px 0; }
+  .sect p {
+    font-size: 24px; }
+  .sect h1 {
+    margin-bottom: 80px;
+    text-align: center;
+    font-family: 'News Cycle', sans-serif !important;
+    font-size: 80px !important;
+    font-weight: bold !important; }
+
+.btns .box {
+  padding: 20px; }
+.btns .inner {
+  padding: 0 20px; }
+  .btns .inner h2 {
+    padding: 20px;
+    transition: ease all .2s;
+    border-bottom: 4px solid #e3e3e3; }
+    .btns .inner h2:hover {
+      border-color: #4366ff; }
 
 .hero-2 {
   height: 100vh; }
+  .hero-2 img {
+    width: 100%;
+    position: absolute;
+    bottom: 0; }
   .hero-2 .title-block {
-    bottom: 0;
+    bottom: 10;
     position: absolute;
     color: #fff !important;
     padding-bottom: 20px;
@@ -22,6 +75,9 @@
   .hero-2 .title {
     opacity: 1 !important;
     font-size: 200px !important; }
+  @media (max-width: 767px) {
+    .hero-2 .title {
+      font-size: 100px !important; } }
 
 /* NEON */
 body {
@@ -157,6 +213,13 @@ h2 {
   border: 2px solid #fff;
   color: #2f87ff;
   background-color: #fff; }
+
+.btn-white2 {
+  border: 2px solid #4366ff !important;
+  color: #fff;
+  background-color: #4366ff !important; }
+  .btn-white2:hover {
+    opacity: .7; }
 
 .btn-white:hover {
   color: #2f87ff;
@@ -783,9 +846,6 @@ h2 {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
     color: #333; }
-
-  body {
-    margin-top: 51px; }
 
   .navbar-default .navbar-brand {
     margin-top: -5px; }
