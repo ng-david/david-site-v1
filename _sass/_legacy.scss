@@ -1,3 +1,30 @@
+/* NEON */
+@import url('https://fonts.googleapis.com/css?family=News+Cycle:700');
+.cool-bg {
+  background: url('../images/fes.jpg') no-repeat fixed;
+  background-size: 100%;
+}
+.hero-2 {
+  height: 100vh;
+  .title-block {
+    bottom: 0;
+    position: absolute;
+    color: #fff !important;
+    padding-bottom: 20px;
+    padding-right: 40px;
+  }
+  h1 {
+    text-align: right;
+    font-family: 'News Cycle', sans-serif !important;
+    font-size: 40px !important;
+    font-weight: bold !important;
+  }
+  .title {
+    opacity: 1 !important;
+    font-size: 200px !important;
+  }
+}
+/* NEON */
 body {
   font-family: 'Catamaran', sans-serif !important;
   //margin-top: 80px;
