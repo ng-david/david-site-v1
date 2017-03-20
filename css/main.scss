@@ -6,7 +6,13 @@
 // Imports [END]
 
 // Universal [START]
-
+.test2 {
+  color: $brand-color;
+}
+.red-section {
+  background-color: $black;
+  color: $white;
+}
 // Universal [END]
 
 // Extendable [START]
@@ -17,6 +23,7 @@
 
 // Navbar [START]
 .navbar {
+  background-color: $white;
   font-family: $heading-font-family;
   text-transform: uppercase;
   a {
