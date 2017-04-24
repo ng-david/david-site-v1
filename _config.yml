@@ -22,7 +22,7 @@ github_username:  ng-david
 
 sass:
   style: compressed
-  
+
 # Build settings
 exclude:
   - Gemfile
