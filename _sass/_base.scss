@@ -15,7 +15,10 @@ section {
   padding-top: 8rem;
   padding-bottom: 8rem;
   h3 {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
+  }
+  .heading {
+    margin-bottom: 8rem;
   }
 }
 
@@ -50,4 +53,14 @@ h2 {
 h3 {
   font-family: $heading-font-family;
   font-size: 2.4rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+.divider {
+  margin: 0 auto;
+  width: 4rem;
+  border-bottom: 2px solid $black;
 }

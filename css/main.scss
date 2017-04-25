@@ -9,9 +9,19 @@
 .test2 {
   color: $brand-color;
 }
-.red-section {
+.grey-section {
+  background-color: $grey;
+  color: white;
+}
+.black-section {
   background-color: $black;
   color: $white;
+}
+.btn {
+  border: 2px solid $brand-color;
+  padding: 1.2rem 2.4rem;
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 // Universal [END]
 
@@ -55,7 +65,7 @@
 .hero {
   padding: 20rem 0rem;
   .img {
-    background-color: black;
+    background-color: $black;
     width: 100px;
     margin: 0 auto 20px;
     height: 100px;
@@ -67,5 +77,43 @@
   h2 {
     font-size: 1.8rem;
   }
+}
+.proj-list {
+  margin-bottom: 4rem;
+
+  .proj-card {
+    height: 240px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    img {
+      width: 100px;
+    }
+    &.dctaxi {
+      background-color: #ED213C;
+    }
+    &.crowdkeep {
+      background-color: #0277da;
+    }
+    &.genesys {
+      background-color: #5d3177;
+    }
+    &.augment {
+      background-color: #5b1ec7;
+    }
+    &.asurface {
+      background-color: #4ca3b7;
+    }
+  }
+  /*
+  .proj-desc {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-align: left;
+    padding-bottom: 4rem;
+  }*/
 }
 // Home [END]
