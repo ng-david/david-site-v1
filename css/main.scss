@@ -98,7 +98,7 @@
 
 // Home [START]
 .hero {
-  padding: 18rem 0rem;
+  padding: 18rem 0rem 20rem;
   position: relative;
   .img {
     background-color: $black;
@@ -112,61 +112,6 @@
   }
   h2 {
     font-size: 1.8rem;
-  }
-  @mixin splash($top, $right, $bottom, $left) {
-    top: $top;
-    right: $right;
-    bottom: $bottom;
-    left: $left;
-    position: absolute;
-  }
-  %splash-sm {
-    width: 4rem;
-    opacity: .3;
-  }
-  %splash-md {
-    width: 8rem;
-    opacity: .5;
-  }
-  %splash-lg {
-    width: 10rem;
-    opacity: .8;
-  }
-  .splash-1 {
-    @include splash(auto, 24rem, 8rem, auto);
-    @extend %splash-md;
-  }
-  .splash-2 {
-    @include splash(auto, 10rem, 24rem, auto);
-    @extend %splash-sm;
-  }
-  .splash-3 {
-    @include splash(auto, 44rem, 6rem, auto);
-    @extend %splash-sm;
-  }
-  .splash-4 {
-    @include splash(auto, auto, 16rem, 0rem);
-    @extend %splash-md;
-  }
-  .splash-5 {
-    @include splash(auto, auto, 11rem, 42rem);
-    @extend %splash-sm;
-  }
-  .splash-6 {
-    @include splash(auto, 2rem, 0rem, auto);
-    @extend %splash-lg;
-  }
-  .splash-7 {
-    @include splash(auto, auto, 1rem, 26rem);
-    @extend %splash-md;
-  }
-  .splash-8 {
-    @include splash(auto, auto, 4rem, 8rem);
-    @extend %splash-lg;
-  }
-  .splash-9 {
-    @include splash(auto, auto, 32rem, 16rem);
-    @extend %splash-sm;
   }
 }
 .proj-list {
@@ -222,3 +167,81 @@
   }*/
 }
 // Home [END]
+
+
+.sprites {
+  @mixin s-pos($top, $right, $bottom, $left) {
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+  }
+  %splash-sm {
+    width: 3rem;
+    height: 3rem;
+    opacity: .3;
+    background-size: 3rem auto;
+
+  }
+  %splash-md {
+    width: 5rem;
+    height: 5rem;
+    opacity: .5;
+    background-size: 5rem auto;
+  }
+  %splash-lg {
+    width: 6rem;
+    height: 6rem;
+    opacity: .8;
+    background-size: 6rem auto;
+  }
+  .s-sprite {
+    position: absolute;
+    background: url("../img/splash/splash_sprite.png") no-repeat;
+    &.business {
+      background-position: 0px -400px;
+      @extend %splash-md;
+      @include s-pos(auto, 25.5rem, 8rem, auto);
+    }
+    &.hc {
+      background-position: 0px -180px;
+      @extend %splash-sm;
+      @include s-pos(auto, 11rem, 24rem, auto);
+    }
+    &.email {
+      background-position: 0px -210px;
+      @extend %splash-sm;
+      @include s-pos(auto, 45rem, 6rem, auto);
+    }
+    &.maintain {
+      background-position: 0px -250px;
+      @extend %splash-md;
+      @include s-pos(auto, auto, 16rem, 1.5rem);
+    }
+    &.pro {
+      background-position: 0px -60px;
+      @extend %splash-sm;
+      @include s-pos(auto, auto, 11rem, 43rem);
+    }
+    &.software {
+      background-position: 0px -60px;
+      @extend %splash-lg;
+      @include s-pos(auto, 4rem, 0rem, auto);
+    }
+    &.thumb {
+      background-position: 0px 0px;
+      @extend %splash-md;
+      @include s-pos(auto, auto, 1rem, 27.5rem);
+    }
+    &.uiux {
+      background-position: 0px -240px;
+      @extend %splash-lg;
+      @include s-pos(auto, auto, 4rem, 10rem);
+    }
+    &.phone {
+      background-position: 0px -90px;
+      @extend %splash-sm;
+      @include s-pos(auto, auto, 32rem, 16rem);
+    }
+  }
+}
