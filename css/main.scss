@@ -6,9 +6,6 @@
 // Imports [END]
 
 // Universal [START]
-.test2 {
-  color: $brand-color;
-}
 .grey-section {
   background-color: $grey-bg;
 }
@@ -22,8 +19,11 @@
   padding: 1.2rem 2.4rem;
   font-size: 1.6rem;
   font-weight: bold;
-  &:hover, &:focus {
+  &:focus {
+    border-color: $brand-color-dark;
     box-shadow: none;
+  }
+  &:hover {
     color: $white;
     background-color: $brand-color;
   }
@@ -98,13 +98,12 @@
 
 // Home [START]
 .hero {
-  padding: 18rem 0rem 20rem;
+  padding: 16rem 0rem 16rem;
   position: relative;
-  .img {
-    background-color: $black;
-    width: 100px;
-    margin: 0 auto 20px;
-    height: 100px;
+  img {
+    width: 16rem;
+    margin: 0 auto 2rem;
+    height: 16rem;
     border-radius: 50%;
   }
   h1 {
@@ -177,22 +176,24 @@
     left: $left;
   }
   %splash-sm {
+    transition: ease all .3s;
     width: 3rem;
     height: 3rem;
-    opacity: .3;
+    opacity: .2;
     background-size: 3rem auto;
-
   }
   %splash-md {
+    transition: ease all .2s;
     width: 5rem;
     height: 5rem;
-    opacity: .5;
+    opacity: .4;
     background-size: 5rem auto;
   }
   %splash-lg {
+    transition: ease all .2s;
     width: 6rem;
     height: 6rem;
-    opacity: .8;
+    opacity: .5;
     background-size: 6rem auto;
   }
   .s-sprite {
@@ -208,7 +209,7 @@
       @extend %splash-sm;
       @include s-pos(auto, 11rem, 24rem, auto);
     }
-    &.email {
+    &.thumb {
       background-position: 0px -210px;
       @extend %splash-sm;
       @include s-pos(auto, 45rem, 6rem, auto);
@@ -228,8 +229,8 @@
       @extend %splash-lg;
       @include s-pos(auto, 4rem, 0rem, auto);
     }
-    &.thumb {
-      background-position: 0px 0px;
+    &.hardware {
+      background-position: 0px -450px;
       @extend %splash-md;
       @include s-pos(auto, auto, 1rem, 27.5rem);
     }
@@ -242,6 +243,13 @@
       background-position: 0px -90px;
       @extend %splash-sm;
       @include s-pos(auto, auto, 32rem, 16rem);
+    }
+    &.hidden {
+      background-position: 0px 0px;
+      opacity: 0;
+    }
+    &.alt {
+      background-position: 0px 0px !important;
     }
   }
 }
