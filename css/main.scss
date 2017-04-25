@@ -10,18 +10,53 @@
   color: $brand-color;
 }
 .grey-section {
-  background-color: $grey;
-  color: white;
+  background-color: $grey-bg;
 }
 .black-section {
   background-color: $black;
   color: $white;
 }
 .btn {
+  transition: ease all .1s;
   border: 2px solid $brand-color;
   padding: 1.2rem 2.4rem;
   font-size: 1.6rem;
   font-weight: bold;
+  &:hover, &:focus {
+    box-shadow: none;
+    color: $white;
+    background-color: $brand-color;
+  }
+  &:active {
+    color: $white;
+    border-color: $brand-color-dark;
+    background-color: $brand-color-dark;
+  }
+
+}
+.tri-bl {
+  width: 0;
+	height: 0;
+	border-bottom: 80px solid $grey-bg;
+	border-right: 100vw solid transparent;
+}
+.tri-br {
+  width: 0;
+	height: 0;
+	border-bottom: 80px solid $grey-bg;
+	border-left: 100vw solid transparent;
+}
+.tri-tr {
+  width: 0;
+	height: 0;
+	border-top: 80px solid $grey-bg;
+	border-left: 100vw solid transparent;
+}
+.tri-tl {
+  width: 0;
+	height: 0;
+	border-top: 80px solid $grey-bg;
+	border-right: 100vw solid transparent;
 }
 // Universal [END]
 
@@ -63,7 +98,8 @@
 
 // Home [START]
 .hero {
-  padding: 20rem 0rem;
+  padding: 18rem 0rem;
+  position: relative;
   .img {
     background-color: $black;
     width: 100px;
@@ -77,19 +113,82 @@
   h2 {
     font-size: 1.8rem;
   }
+  @mixin splash($top, $right, $bottom, $left) {
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+    position: absolute;
+  }
+  %splash-sm {
+    width: 4rem;
+    opacity: .3;
+  }
+  %splash-md {
+    width: 8rem;
+    opacity: .5;
+  }
+  %splash-lg {
+    width: 10rem;
+    opacity: .8;
+  }
+  .splash-1 {
+    @include splash(auto, 24rem, 8rem, auto);
+    @extend %splash-md;
+  }
+  .splash-2 {
+    @include splash(auto, 10rem, 24rem, auto);
+    @extend %splash-sm;
+  }
+  .splash-3 {
+    @include splash(auto, 44rem, 6rem, auto);
+    @extend %splash-sm;
+  }
+  .splash-4 {
+    @include splash(auto, auto, 16rem, 0rem);
+    @extend %splash-md;
+  }
+  .splash-5 {
+    @include splash(auto, auto, 11rem, 42rem);
+    @extend %splash-sm;
+  }
+  .splash-6 {
+    @include splash(auto, 2rem, 0rem, auto);
+    @extend %splash-lg;
+  }
+  .splash-7 {
+    @include splash(auto, auto, 1rem, 26rem);
+    @extend %splash-md;
+  }
+  .splash-8 {
+    @include splash(auto, auto, 4rem, 8rem);
+    @extend %splash-lg;
+  }
+  .splash-9 {
+    @include splash(auto, auto, 32rem, 16rem);
+    @extend %splash-sm;
+  }
 }
 .proj-list {
-  margin-bottom: 4rem;
-
-  .proj-card {
-    height: 240px;
+  .card {
+    height: 255px;
     width: 100%;
+    background-color: $black;
+    margin-bottom: 4rem;
+    transition: ease all .1s;
+    &:hover {
+      cursor: pointer;
+      opacity: .6;
+    }
+  }
+  .proj-card {
+    @extend .card;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 4rem;
     img {
-      width: 100px;
+      max-height: 80px;
+      max-width: 180px;
     }
     &.dctaxi {
       background-color: #ED213C;
@@ -101,10 +200,16 @@
       background-color: #5d3177;
     }
     &.augment {
-      background-color: #5b1ec7;
+      background-color: #000;
     }
     &.asurface {
       background-color: #4ca3b7;
+    }
+  }
+  .art-card {
+    @extend .card;
+    img {
+      width: 100%;
     }
   }
   /*
