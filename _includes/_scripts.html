@@ -24,9 +24,11 @@
 <script src="https://use.fontawesome.com/df144d35b5.js"></script>
 
 <script>
-  // Splash initial
-  $( document ).ready(function() {
-    $(".s-sprite").removeClass("hidden");
+  // Splash initial appear
+  $(document).ready(function() {
+    setTimeout(function() {
+      $(".s-sprite").removeClass("hidden");
+    },300);
   })
 
   // Everchanging sm splash
@@ -58,9 +60,16 @@
     $(".s-sprite").removeClass("alt");
   })
 
-  $(".s-sprite").hover(function() {
-    $(".s-sprite").addClass("alt2");
-  }, function() {
-    $(".s-sprite").removeClass("alt2");
-  })
+  // Scroll to element
+  /* Script to allow navbar click to scroll to area on page */
+  $('a[href^="#"]').on('click', function(event) {
+      var target = $(this.getAttribute('href'));
+      if( target.length ) {
+          event.preventDefault();
+          $('html, body').stop().animate({
+              scrollTop: target.offset().top
+          }, 200);
+      }
+  });
+
 </script>

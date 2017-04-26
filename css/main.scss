@@ -20,7 +20,6 @@
   font-size: 1.6rem;
   font-weight: bold;
   &:focus {
-    border-color: $brand-color-dark;
     box-shadow: none;
   }
   &:hover {
@@ -111,6 +110,31 @@
   }
   h2 {
     font-size: 1.8rem;
+  }
+  .more-scroll {
+    position: absolute;
+    z-index: 50;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: $black;
+    font-size: 3rem;
+    animation: pulse 2s infinite;
+    &:hover {
+      opacity: 1;
+      animation: none;
+    }
+    @keyframes pulse {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: .4;
+      }
+    }
   }
 }
 .proj-list {
@@ -250,6 +274,7 @@
     }
     &.alt {
       background-position: 0px 0px !important;
+      opacity: .2;
     }
   }
 }
