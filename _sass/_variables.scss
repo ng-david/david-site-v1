@@ -1,7 +1,7 @@
 
 // Our variables
 $heading-font-family: 'Oswald', sans-serif;
-$base-font-family: 'Raleway', sans-serif;
+$base-font-family: 'Zilla Slab', serif;
 
 $font-light:200;
 $font-regular: 400;
@@ -17,8 +17,14 @@ $background-color: #ffffff;
 $white:            #ffffff;
 $black:            #000000;
 $grey:             #808080;
-$brand-color:      #ca0000;
-$brand-color-dark: #8e0000;
+
+$dark-bg:          #34393b;
+$darkest-bg:       #292e31;
+$body-bg:          #24292b;
+
+$brand-color:      #35c8ff;
+$brand-color-dark: #b80000;
+$brand-color-light:#93ecff;
 
 $grey-bg:          #f9f8f7;
 $grey-border:      #f4f4f5;

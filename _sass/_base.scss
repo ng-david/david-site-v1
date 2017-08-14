@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald:300');
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,600');
+@import url('https://fonts.googleapis.com/css?family=Zilla+Slab:400,600');
 
 html {
   font-size: 62.5%
@@ -8,7 +8,8 @@ html {
 body {
   font-family: $base-font-family;
   line-height: $base-line-height;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  background-color: $body-bg;
 }
 
 section {
@@ -36,7 +37,8 @@ a {
   color: $brand-color;
   &:hover, &:focus {
     outline: none;
-    color: $brand-color-dark;
+    color: $brand-color-light;
+    //color: $brand-color-dark;
   }
 }
 
@@ -60,7 +62,8 @@ h3 {
 }
 
 h4 {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
 .divider {
