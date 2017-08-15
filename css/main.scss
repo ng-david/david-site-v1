@@ -196,7 +196,7 @@
       transition: ease all .2s;
       width: 100%;
       &:hover {
-        opacity: .6;
+        opacity: .8;
       }
     }
     .caption {
@@ -226,8 +226,15 @@
   }
   .art-card {
     @extend .proj-card;
+    transition: ease all .2s;
+    &:hover {
+      opacity: .8; // images jiggle when doing opacity for some reason
+    }
     img {
       width: 100%;
+      &:hover {
+        opacity: 1;
+      }
     }
   }
   /*
@@ -338,3 +345,13 @@
     }
   }
 }
+
+  .f-box {
+    img {
+      max-height: 70vh;
+      margin-bottom: 2.5rem;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
