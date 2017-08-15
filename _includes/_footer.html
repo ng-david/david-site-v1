@@ -6,34 +6,20 @@
         <a
           target="_blank"
           href="https://github.com/ng-david/"
-          onclick="ga('send', 'event', 'clicked link', 'My Github', 'Links' );"
+          onclick="sendLinkEvent('GOTO Davids Github')"
         >
           <i class="fa fa-github" aria-hidden="true"></i>
         </a>
         <a
           target="_blank"
           href="https://www.linkedin.com/in/ng-david/"
-          onclick="
-          ga('send', {
-            hitType: 'event',
-            eventAction: 'clicked link',
-            eventLabel: 'My LinkedIn',
-            eventCategory: 'Links',
-          });
-          "
+          onclick="sendLinkEvent('GOTO Davids LinkedIn)"
         >
           <i class="fa fa-linkedin-square" aria-hidden="true"></i>
         </a>
         <a
           href="#"
-          onclick="
-          ga('send', {
-            hitType: 'event',
-            eventAction: 'clicked link',
-            eventLabel: 'Email Me',
-            eventCategory: 'Links',
-          });
-          "
+          onclick="sendLinkEvent('GOTO Email David (Footer)')"
         >
           <i class="fa fa-envelope" aria-hidden="true"></i>
         </a>

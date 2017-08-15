@@ -17,6 +17,7 @@
 <script src="https://use.fontawesome.com/df144d35b5.js"></script>
 
 <script>
+
   // Splash initial appear
   $(document).ready(function() {
     setTimeout(function() {
@@ -55,7 +56,7 @@
 
   // Scroll to element
   /* Script to allow navbar click to scroll to area on page */
-  $('a[href^="#"]').on('click', function(event) {
+  $('.nav-link').on('click', function(event) {
       var target = $(this.getAttribute('href'));
       if( target.length ) {
           event.preventDefault();
@@ -65,4 +66,13 @@
       }
   });
 
+  // My Google Analytics Scripts
+  function sendLinkEvent(label) {
+    ga('send', {
+      hitType: 'event',
+      eventAction: 'clicked link',
+      eventLabel: label,
+      eventCategory: 'Links',
+    });
+  }
 </script>
