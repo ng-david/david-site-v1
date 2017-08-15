@@ -345,10 +345,35 @@
     }
   }
 }
-
+.featherlight .featherlight-content {
+  padding: 0rem;
+  background-color: transparent;
+  color: $white;
+  position: static;
+}
+.featherlight-previous {
+  z-index: 20;
+  top: 0;
+  left: 0rem;
+  right: 90%;
+  &:hover {
+    background-color: rgba(255,255,255,.05);
+  }
+}
+.featherlight-next {
+  z-index: 20;
+  top: 0;
+  right: 0rem;
+  left: 90%;
+  &:hover {
+    background-color: rgba(255,255,255,.05);
+  }
+}
   .f-box {
     img {
-      max-height: 70vh;
+      max-height: 80vh;
+      display: block;
+      margin: 0 auto;
       margin-bottom: 2.5rem;
     }
     p {
