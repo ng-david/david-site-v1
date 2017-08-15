@@ -56,13 +56,13 @@
 
   // Scroll to element
   /* Script to allow navbar click to scroll to area on page */
-  $('.nav-link').on('click', function(event) {
+  $('.scroll-link').on('click', function(event) {
       var target = $(this.getAttribute('href'));
       if( target.length ) {
           event.preventDefault();
           $('html, body').stop().animate({
               scrollTop: target.offset().top
-          }, 200);
+          }, 400);
       }
   });
 
