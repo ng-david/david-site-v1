@@ -36,6 +36,7 @@ p {
 a {
   color: $brand-color;
   &:hover, &:focus {
+    text-decoration: none;
     outline: none;
     color: $brand-color-light;
     //color: $brand-color-dark;
