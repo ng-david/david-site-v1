@@ -31,19 +31,28 @@ title: David Ng
     <div class="s-sprite hidden uiux"></div>
     <div class="s-sprite hidden phone"></div>
   </div>
-  <a class="scroll-link more-scroll" href="#about">
+  <a
+    class="scroll-link more-scroll"
+    href="#about"
+    onclick="sendLinkEvent('GOTO About from clicking arrow (Hero)')"
+  >
     <i class="fa fa-chevron-down" aria-hidden="true"></i>
   </a>
 </section>
 
 <div id="about" class="tri-bl dark darkest-bg"></div>
 <section class="dark-section">
-  <div class="container text-center">
+  <div class="container -center">
     <div class="row">
       <div class="col-md-8 offset-md-2">
-        <h3>ABOUT ME</h3>
-        <h2>I'm a meticulously artstic, detail-oriented software engineer.</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <h3 class="text-center">ABOUT ME</h3>
+        <p>
+          <strong>I am a third year student at the University of Maryland</strong> studying Computer Science. Outside of school, I have been a Front End Developer Intern for the past two years at Crowdkeep, DC. In my free time, I love to work on my personal coding projects, searching for new and innovative approaches to solve everyday dilemmas.
+        </p>
+        <br>
+        <p>
+          <strong>When I'm not in front of my computer,</strong> you will find me working on my art projects, trying to become a master chef, or snooping for every frugal sale that's happening on the internet at the same time.
+        </p>
       </div>
     </div>
   </div>
@@ -56,9 +65,7 @@ title: David Ng
       <div class="col-md-8 offset-md-2">
         <h3>PROJECTS</h3>
         <p>
-          My next goals are to develop more <strong>powerful applications</strong> and practice <strong>game development</strong>.
-          <br>
-          Here's what I have been working on:
+          My next goals are to develop more <strong>powerful applications</strong> and play with <strong>game development</strong>, but here's what I have been working on:
         </p>
       </div>
     </div>
@@ -72,8 +79,20 @@ title: David Ng
                 <div class="card-heading">
                   <h4>Chinglish</h4>
                   <span>
-                    <a href="https://github.com/ng-david/chinglish" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                    <a href="https://chinglish-lwmtpniogj.now.sh/" target="_blank"><i class="fa fa-window-maximize" aria-hidden="true"></i></a>
+                    <a
+                      href="https://github.com/ng-david/chinglish"
+                      target="_blank"
+                      onclick="sendLinkEvent('GOTO Chinglish Github (Projects)')"
+                    >
+                      <i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a
+                      href="https://chinglish-lwmtpniogj.now.sh/"
+                      target="_blank"
+                      onclick="sendLinkEvent('GOTO Chinglish Webapp (Projects)')"
+                    >
+                      <i class="fa fa-window-maximize" aria-hidden="true"></i>
+                    </a>
                   </span>
                 </div>
                 <p>A chatting app to bridge the language barrier between Chinese and English speakers. This app automatically <strong>translates every message</strong> in both directions.</p>
@@ -88,7 +107,6 @@ title: David Ng
                   <li>Express.JS</li>
                   <li>Google Translate API</li>
                 </ul>
-
               </div>
             </div>
           </div>
@@ -98,7 +116,13 @@ title: David Ng
               <div class="caption">
                 <div class="card-heading">
                   <h4>Crowdkeep Web App</h4>
-                  <a href="https://app.crowdkeep.com/" target="_blank"><i class="fa fa-window-maximize" aria-hidden="true"></i></a>
+                  <a
+                    href="https://app.crowdkeep.com/"
+                    target="_blank"
+                    onclick="sendLinkEvent('GOTO Crowdkeep Webapp (Projects)')"
+                  >
+                    <i class="fa fa-window-maximize" aria-hidden="true"></i>
+                  </a>
                 </div>
                 <p>
                   Designed and developed most of the frontend for Crowdkeep's Time Tracking Web application, while focusing on both UI and UX.
@@ -117,7 +141,13 @@ title: David Ng
               <div class="caption">
                 <div class="card-heading">
                   <h4>Crowdkeep Mobile Apps</h4>
-                  <a href="https://itunes.apple.com/us/app/crowdkeep-time/id953301538?mt=8" target="_blank"><i class="fa fa-window-maximize" aria-hidden="true"></i></a>
+                  <a
+                    href="https://itunes.apple.com/us/app/crowdkeep-time/id953301538?mt=8"
+                    target="_blank"
+                    onclick="sendLinkEvent('GOTO Crowdkeep Mobile Apps (Projects)')"
+                  >
+                    <i class="fa fa-window-maximize" aria-hidden="true"></i>
+                  </a>
                 </div>
                 <p>
                   Implemented design, color, and ux updates to the Crowdkeep iOS & Android Apps in Xamarin.
@@ -156,7 +186,13 @@ title: David Ng
               <div class="caption">
                 <div class="card-heading">
                   <h4>DC Taxi</h4>
-                  <a href="https://www.dctaxi.com/" target="_blank"><i class="fa fa-window-maximize" aria-hidden="true"></i></a>
+                  <a
+                    href="https://www.dctaxi.com/"
+                    target="_blank"
+                    onclick="sendLinkEvent('GOTO DCTaxi Website (Projects)')"
+                  >
+                    <i class="fa fa-window-maximize" aria-hidden="true"></i>
+                  </a>
                 </div>
                 <p>
                   Designed and developed the official DC Taxi landing page to boost mobile app installs.
@@ -177,7 +213,13 @@ title: David Ng
               <div class="caption">
                 <div class="card-heading">
                   <h4>Augment Arcade</h4>
-                  <a href="https://augmentarcade.com/" target="_blank"><i class="fa fa-window-maximize" aria-hidden="true"></i></a>
+                  <a
+                    href="https://augmentarcade.com/"
+                    target="_blank"
+                    onclick="sendLinkEvent('GOTO Augment Arcade Website (Projects)')"
+                  >
+                    <i class="fa fa-window-maximize" aria-hidden="true"></i>
+                  </a>
                 </div>
                 <p>
                   Fully designed and developed the official Augment Arcade landing page, Washington DC's first Virtual Reality Arcade Bar.
@@ -198,7 +240,13 @@ title: David Ng
               <div class="caption">
                 <div class="card-heading">
                   <h4>Asurface DC</h4>
-                  <a href="http://www.asurface-dc.com/" target="_blank"><i class="fa fa-window-maximize" aria-hidden="true"></i></a>
+                  <a
+                    href="http://www.asurface-dc.com/"
+                    target="_blank"
+                    onclick="sendLinkEvent('GOTO Asurface Website (Projects)')"
+                  >
+                    <i class="fa fa-window-maximize" aria-hidden="true"></i>
+                  </a>
                 </div>
                 <p>
                   Worked on a team to design and develop Asurface DC's official website to promote their tile works and generate new customers.
@@ -218,7 +266,13 @@ title: David Ng
               <div class="caption">
                 <div class="card-heading">
                   <h4>Genesys Impact</h4>
-                  <a href="https://www.genesysimpact.com/" target="_blank"><i class="fa fa-window-maximize" aria-hidden="true"></i></a>
+                  <a
+                    href="https://www.genesysimpact.com/"
+                    target="_blank"
+                    onclick="sendLinkEvent('GOTO Genesys Impact Website (Projects)')"
+                  >
+                    <i class="fa fa-window-maximize" aria-hidden="true"></i>
+                  </a>
                 </div>
                 <p>
                   Implemented bug fixes and design updates to modernize the official website for Genesys Impact, an IT solution company based in DC.
@@ -238,7 +292,13 @@ title: David Ng
               <div class="caption">
                 <div class="card-heading">
                   <h4>Crowdkeep</h4>
-                  <a href="https://www.crowdkeep.com/" target="_blank"><i class="fa fa-window-maximize" aria-hidden="true"></i></a>
+                  <a
+                    href="https://www.crowdkeep.com/"
+                    target="_blank"
+                    onclick="sendLinkEvent('GOTO Crowdkepe Marketing Website (Projects)')"
+                  >
+                    <i class="fa fa-window-maximize" aria-hidden="true"></i>
+                  </a>
                 </div>
                 <p>
                   Helped design and develop the official Crowdkeep website to promote their new Web, iOS, and Android time & location tracking apps.
@@ -277,49 +337,73 @@ title: David Ng
           data-featherlight-filter="a"
         >
           <div class="col-sm-4 col-6">
-            <a href="#" data-featherlight="#kay2">
+            <a
+              href="#"
+              data-featherlight="#kay2"
+              onclick="sendLinkEvent('OPEN kay2 img (Art)')"
+            >
               <div class="art-card genesys">
                 <img src="/img/thumbs/kay2.jpg" alt="">
               </div>
             </a>
           </div>
           <div class="col-sm-4 col-6">
-            <a href="#" data-featherlight="#kt">
+            <a
+              href="#"
+              data-featherlight="#kt"
+              onclick="sendLinkEvent('OPEN kt img (Art)')"
+            >
               <div class="art-card ">
                 <img src="/img/thumbs/kt.jpg" alt="">
               </div>
             </a>
           </div>
           <div class="col-sm-4 col-6">
-            <a href="#" data-featherlight="#dimsum">
+            <a
+              href="#"
+              data-featherlight="#dimsum"
+              onclick="sendLinkEvent('OPEN dimsum img (Art)')"
+            >
               <div class="art-card">
                 <img src="/img/thumbs/dimsum.jpg" alt="">
               </div>
             </a>
           </div>
           <div class="col-sm-4 col-6">
-            <a href="#" data-featherlight="#cake">
+            <a
+              href="#"
+              data-featherlight="#cake"
+              onclick="sendLinkEvent('OPEN cake img (Art)')"
+            >
               <div class="art-card ">
                 <img src="/img/thumbs/cake.jpg" alt="">
               </div>
             </a>
           </div>
           <div class="col-sm-4 col-6">
-            <a href="#" data-featherlight="#goldfish">
+            <a
+              href="#"
+              data-featherlight="#goldfish"
+              onclick="sendLinkEvent('OPEN goldfish img (Art)')"
+            >
               <div class="art-card genesys">
                 <img src="/img/thumbs/goldfish.jpg" alt="">
               </div>
             </a>
           </div>
           <div class="col-sm-4 col-6">
-            <a href="#" data-featherlight="#pig">
+            <a
+              href="#"
+              data-featherlight="#pig"
+              onclick="sendLinkEvent('OPEN pig img (Art)')"
+            >
               <div class="art-card ">
                 <img src="/img/thumbs/pig.jpg" alt="">
               </div>
             </a>
           </div>
         </div>
-        <a class="btn" href="#">View All</a>
+        <!-- <a class="btn" href="#">View All</a> -->
       </div>
     </div>
   </div>
@@ -333,7 +417,7 @@ title: David Ng
         <h3>CONTACT</h3>
         <a
           class="btn"
-          href="#"
+          href="mailto:dng5@umd.edu"
           onclick="sendLinkEvent('GOTO Email David (Contact)')"
         >Email Me</a>
         <a

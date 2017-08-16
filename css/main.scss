@@ -9,14 +9,32 @@
 .dark-section {
   background-color: $dark-bg;
   color: $white;
+  p {
+    color: $white-clear;
+  }
+  strong {
+    color: $white;
+  }
 }
 .medium-section {
   background-color: #444a4d;
   color: $white;
+  p {
+    color: $white-clear;
+  }
+  strong {
+    color: $white;
+  }
 }
 .darkest-section {
   background-color: $darkest-bg;
   color: $white;
+  p {
+    color: $white-clear;
+  }
+  strong {
+    color: $white;
+  }
 }
 .light-section {
   background-color: #f7f7f7;
@@ -152,7 +170,7 @@
   h2 {
     color: white;
     font-size: 1.8rem;
-    color: rgba(255,255,255,.6);
+    color: $white-clear;
     a {
       color: $white;
       &:hover {
@@ -258,6 +276,10 @@
   align-items: center;
   p {
     padding: 2rem 0;
+  }
+  a {
+    margin-left: 1rem;
+    font-size: 2rem;
   }
 }
 // Footer [END]
