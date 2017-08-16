@@ -28,6 +28,26 @@
     //background-color: $brand-color-dark;
   }
 }
+.tags {
+  list-style: none;
+  padding: 0;
+  li {
+    display: inline;
+    background-color: #f0f0f0;
+    padding: .4rem .8rem;
+    color: $grey;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  &.alt {
+    li {
+      background-color: $darkest-bg;
+      color: $white-clear;
+      font-size: 1.2rem;
+    }
+  }
+}
 // Universal [END]
 
 // Navbar [START]
@@ -133,19 +153,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-      }
-      .tags {
-        list-style: none;
-        padding: 0;
-        li {
-          display: inline;
-          background-color: #f0f0f0;
-          padding: .4rem .8rem;
-          color: $grey;
-          font-size: 1.2rem;
-          font-weight: bold;
-          text-transform: uppercase;
-        }
       }
     }
   }
