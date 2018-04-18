@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>TCS: Looking into the Future</title>
+  </head>
+  <body>
+    <article class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="left">
+              <h2>STOC 2018</h2>
+              <h1>TCS: Looking <br>into the Future</h1>
+              <h2>1 - 4 PM</h2>
+              <h2>June 29th, 2018</h2>
+              <h2>Los Angeles, CA</h2>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="right">
+              <p>
+                <strong>TCS</strong> has made major contributions to many areas such as Quantum Computing, Computational Biology, Cryptography, Advertisement auction design via the lens of algorithms and providing formal scientific frameworks. These foundational advances have played a huge role in major societal impact via search engine technologies, e-commerce, secure communications, DNA sequencing etc.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#intro" class="scroll-link">
+        <img class="downarr" src="./img/chevy.svg" alt="">
+      </a>
+    </article>
+    <article id="intro" class="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3 text-center">
+            <img class="avatar" src="./img/vjay.jpg" alt="">
+            <h2>Join us for a half-day workshop of multiple 30-minute speakers to celebrate the 60th birthday of Vijay Vazirani.</h2>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="bio">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 offset-md-1">
+            <div class="papersheet">
+              <h2>Workshop</h2>
+              <br>
+              <p>
+                <strong>Vijay Vazirani</strong>&nbsp; has been a leader in the field for many years, with a broad research agenda, and a large set of collaborators, co-authors and students in TCS.
+                <br><br>
+                This will be a one-day workshop to celebrate Vijay, his career and contributions to the field, and influence on other TCS researchers, both professionally and personally, on the occasion of his 60th birthday, by bringing together several pioneers in the field to speak about their vision for the future of theoretical computer science and the emerging areas in which we can see further impact in the next decade. What ties all these amazing people together is of course their collaboration with Vijay Vazirani, who himself has made foundational contributions to graph matching theory, complexity theory, approximation algorithms, randomized algorithms, algorithmic game theory, online ad auctions and computability of market equilibria.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="sched">
+      <div class="container">
+        <h2 class="heading">Schedule</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="sched-chunk">
+              <h2>1:00PM - 1:30PM</h2>
+              <p>Manuel Blum (CMU)</p>
+            </div>
+            <div class="sched-chunk">
+              <h2>1:30PM - 2:00PM</h2>
+              <p>Leonard Adleman (USC)</p>
+            </div>
+            <div class="sched-chunk">
+              <h2>2:00PM - 2:30PM</h2>
+              <p>Leonard Schulman (CalTech)</p>
+            </div>
+            <div class="sched-chunk">
+              <h2>2:30PM - 2:40PM</h2>
+              <p>Break (Common across all workshops)</p>
+            </div>
+
+          </div>
+          <div class="col-md-6">
+            <div class="sched-chunk">
+              <h2>2:40PM - 3:10PM</h2>
+              <p>Richard Karp (Berkeley)</p>
+            </div>
+            <div class="sched-chunk">
+              <h2>3:10PM - 3:40pm</h2>
+              <p>Umesh Vazirani (Berkeley)</p>
+            </div>
+            <div class="sched-chunk">
+              <h2>3:40PM - 4:00PM</h2>
+              <p>Vijay’s students</p>
+            </div>
+            <!-- <h2 class="heading">Contact</h2>
+            <p>
+              Samir Khuller <br>
+              301.333.3344
+              example@email.com
+            </p> -->
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="contact">
+      <div class="container">
+        <div class="text-center">
+          <h2>Contact Information</h2>
+          <br>
+          <p>
+            Person Name
+            <br>
+            example@email.com
+            <br>
+            301.333.3333
+          </p>
+        </div>
+      </div>
+    </article>
+    <article class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 footer-left">
+            <p>
+              © Copyright 2018
+            </p>
+          </div>
+          <div class="col-md-6 footer-right">
+            <p>
+
+              Website by <a href="https://ngdavid.com">David Ng</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- jQuery -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript">
+    // Scroll to element
+    /* Script to allow navbar click to scroll to area on page */
+    $('.scroll-link').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if( target.length ) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top
+            }, 200);
+        }
+    });
+    </script>
+  </body>
+</html>

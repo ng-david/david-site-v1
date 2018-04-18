@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Zilla+Slab:400,500,700');
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Zilla Slab', serif;
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+
+h1 {
+  font-weight: bold;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 2.4rem;
+}
+
+article.hero {
+  position: relative;
+}
+
+article.hero h1 {
+  color: #2E5098;
+  font-size: 7.2rem;
+}
+
+article.hero h2 {
+  color: #2E5098;
+}
+
+article.hero .left, .right {
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+}
+
+img.downarr {
+  position: absolute;
+  z-index: 10;
+  bottom: 4rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 1rem;
+  transition: ease all .2s;
+  width: 5rem;
+  animation: pulse 2s infinite;
+}
+
+.scroll-link:hover img.downarr {
+  opacity: 1;
+  animation: none;
+  bottom: 3.5rem;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .4;
+  }
+}
+
+img.avatar {
+  text-align: center;
+  width: 12rem;
+  border-radius: 14rem;
+  margin-bottom: 4rem;
+}
+
+/* --------------------------------------------------------------------*/
+
+article.intro {
+  padding-top: 10rem;
+  padding-bottom: 30rem;
+  overflow: hidden;
+  background-image: url('../img/la.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+article.intro h2 {
+  color: white;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* --------------------------------------------------------------------*/
+
+article.bio .papersheet {
+  background-color: white;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  margin-top: -20rem;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
+  padding: 8rem;
+}
+
+.papersheet p {
+  margin-bottom: 0;
+}
+
+.papersheet .special {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+/* --------------------------------------------------------------------*/
+
+article.sched {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.sched .heading {
+  margin-bottom: 4rem;
+}
+
+.sched-chunk {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.sched-chunk p {
+  margin-bottom: 0;
+}
+
+.sched-chunk h2 {
+  color: #2E5098;
+}
+
+/* --------------------------------------------------------------------*/
+
+article.contact {
+  background-color: #2E5098;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  color: white;
+}
+
+/* --------------------------------------------------------------------*/
+
+article.footer {
+  background-color: #2E5098;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white;
+}
+
+.footer p {
+  margin: 0;
+  opacity: .5;
+}
+
+.footer .footer-right {
+  text-align: right;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer a:hover {
+  color: white;
+}
