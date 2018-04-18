@@ -4,6 +4,13 @@ html {
   font-size: 62.5%;
 }
 
+@media (max-width: 991.99px) {
+  html {
+    font-size: 55%;
+    
+  }
+}
+
 body {
   font-family: 'Zilla Slab', serif;
   font-size: 1.8rem;
@@ -22,6 +29,8 @@ h2 {
 
 article.hero {
   position: relative;
+  padding-top: 20rem;
+  padding-bottom: 20rem;
 }
 
 article.hero h1 {
@@ -34,8 +43,7 @@ article.hero h2 {
 }
 
 article.hero .left, .right {
-  padding-top: 20rem;
-  padding-bottom: 20rem;
+
 }
 
 img.downarr {
