@@ -160,8 +160,8 @@ article.contact {
 
 article.footer {
   background-color: #2E5098;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0rem;
+  padding-bottom: 2rem;
   color: white;
 }
 
