@@ -27,6 +27,14 @@ h2 {
   font-size: 2.4rem;
 }
 
+a {
+  color: #2dabe6;
+}
+a:hover {
+  color: #63ccff;
+  text-decoration: none;
+}
+
 article.hero {
   position: relative;
   padding-top: 20rem;
@@ -55,7 +63,7 @@ img.downarr {
   margin: 0 auto;
   padding: 1rem;
   transition: ease all .2s;
-  width: 5rem;
+  width: 4rem;
   animation: pulse 2s infinite;
 }
 
