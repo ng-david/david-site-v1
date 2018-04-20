@@ -130,11 +130,15 @@ article.intro {
 }
 
 article.intro .left {
-  text-align: right;
+  text-align: left;
+  padding-left: 1.5rem;
   color: white;
+  display: flex;
+  align-items: center;
 }
 article.intro .right {
-  text-align: left;
+  text-align: right;
+  padding-right: 1.5rem;
   color: white;
 }
 article.intro img {
@@ -149,9 +153,13 @@ article.intro img {
 
 article.intro h2 {
   font-weight: 500;
-  font-size: 3rem;
+  font-size: 3.6rem;
 }
 
+article.intro h3 {
+  font-weight: 300;
+  font-size: 2.4rem;
+}
 /* --------------------------------------------------------------------*/
 
 article.bio .papersheet {
@@ -194,7 +202,7 @@ article.sched {
 .sched-chunk h3 {
   margin-top: 2rem;
   font-size: 1.8rem;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .sched-chunk p {
@@ -212,6 +220,10 @@ article.contact {
   padding-top: 10rem;
   padding-bottom: 10rem;
   color: white;
+}
+
+.organizers h2 {
+  font-weight: 500;
 }
 
 /* --------------------------------------------------------------------*/
@@ -238,4 +250,22 @@ article.footer {
 
 .footer a:hover {
   color: white;
+}
+
+h2 a {
+  position: relative;
+}
+
+h2 a::after {
+  content: " →";
+  opacity: 0;
+  position: absolute;
+  right: -2rem;
+  transition: ease all .2s;
+}
+
+h2 a:hover::after {
+  opacity: 1;
+  right: -3rem;
+  display: inline;
 }
