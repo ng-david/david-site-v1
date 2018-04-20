@@ -4,13 +4,6 @@ html {
   font-size: 62.5%;
 }
 
-@media (max-width: 991.99px) {
-  html {
-    font-size: 55%;
-
-  }
-}
-
 body {
   font-family: 'Zilla Slab', serif;
   font-size: 1.8rem;
@@ -143,6 +136,7 @@ article.intro .right {
 }
 article.intro img {
   width: 26rem;
+  max-width: 100%;
   /* padding: 11rem; */
   background-color: white;
   border-radius: 4px;
@@ -268,4 +262,19 @@ h2 a:hover::after {
   opacity: 1;
   right: -3rem;
   display: inline;
+}
+
+/*--------------------------------------------------------------------*/
+
+@media (max-width: 575px) {
+  article.intro .right {
+    margin-top: 4rem;
+    text-align: left;
+  }
+}
+
+@media (max-width: 991.99px) {
+  html {
+    font-size: 55%;
+  }
 }
