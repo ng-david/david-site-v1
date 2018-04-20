@@ -38,6 +38,7 @@ a:hover {
 article.hero {
   position: relative;
   padding-top: 20rem;
+  /* margin-bottom: -20rem; */
   padding-bottom: 20rem;
 }
 
@@ -46,13 +47,39 @@ article.hero h1 {
   font-size: 7.2rem;
 }
 
+article.hero h3 {
+  font-size: 2.0rem;
+}
 article.hero h2 {
+  font-size: 3rem;
   color: #2E5098;
 }
 
-article.hero .left, .right {
-
+article.hero .subhead {
+  margin-top: 10rem;
+  padding: 4rem;
+  border-bottom: 2px solid #e3e3e3;
+  /* border-radius: 4px; */
+  background-color: white;
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.2);
 }
+
+article.hero .subhead .left {
+  /* text-align: right; */
+}
+
+article.hero .subhead .right {
+  text-align: left;
+}
+
+.subhead .right img {
+  /* border-radius: 4px; */
+  width: 100%;
+}
+
+
 
 img.downarr {
   position: absolute;
@@ -93,7 +120,7 @@ img.avatar {
 
 article.intro {
   padding-top: 10rem;
-  padding-bottom: 30rem;
+  padding-bottom: 10rem;
   overflow: hidden;
   background-color: #2E5098;
   background-image: url('../img/la.jpg');
@@ -102,10 +129,27 @@ article.intro {
   background-attachment: fixed;
 }
 
-article.intro h2 {
+article.intro .left {
+  text-align: right;
   color: white;
+}
+article.intro .right {
+  text-align: left;
+  color: white;
+}
+article.intro img {
+  width: 26rem;
+  /* padding: 11rem; */
+  background-color: white;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.2);
+}
+
+article.intro h2 {
   font-weight: 500;
-  text-align: center;
+  font-size: 3rem;
 }
 
 /* --------------------------------------------------------------------*/
@@ -147,6 +191,12 @@ article.sched {
   border-bottom: 1px solid #e3e3e3;
 }
 
+.sched-chunk h3 {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
 .sched-chunk p {
   margin-bottom: 0;
 }
@@ -168,7 +218,7 @@ article.contact {
 
 article.footer {
   background-color: #2E5098;
-  padding-top: 0rem;
+  padding-top: 2rem;
   padding-bottom: 2rem;
   color: white;
 }
