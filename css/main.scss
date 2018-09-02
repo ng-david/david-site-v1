@@ -1,0 +1,236 @@
+---
+---
+// Imports [START]
+@import "_variables";
+@import "_base";
+@import "_splash";
+@import "_triangles";
+@import "_sections";
+// Imports [END]
+
+// Universal [START]
+.btn {
+  transition: ease all .1s;
+  border: 2px solid $brand-color;
+  padding: 1.2rem 2.4rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  &:focus {
+    box-shadow: none;
+  }
+  &:hover {
+    color: $white;
+    background-color: $brand-color;
+  }
+  &:active {
+    color: $white;
+    //border-color: $brand-color-dark;
+    //background-color: $brand-color-dark;
+  }
+}
+.tags {
+  list-style: none;
+  padding: 0;
+  li {
+    display: inline;
+    background-color: #f0f0f0;
+    padding: .4rem .8rem;
+    color: $grey;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  &.alt {
+    li {
+      background-color: $darkest-bg;
+      color: $white-clear;
+      font-size: 1.2rem;
+    }
+  }
+}
+// Universal [END]
+
+// Navbar [START]
+.navbar {
+  background-color: $darkest-bg;
+  font-family: $heading-font-family;
+  text-transform: uppercase;
+  .navbar-brand {
+    position: absolute;
+    z-index: 2;
+  }
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .nav-item {
+    letter-spacing: 1px;
+    padding: 1rem 1.5rem;
+  }
+  .nav-link {
+    &:hover {
+    }
+  }
+}
+// Navbar [END]
+
+// Home [START]
+.hero {
+  padding: 24rem 0rem;
+  position: relative;
+  background-color: $darkest-bg;
+  img {
+    width: 14rem;
+    margin: 0 auto 2rem;
+    height: 14rem;
+    border-radius: 50%;
+  }
+  h1 {
+    color: white;
+    font-size: 6.4rem;
+  }
+  h2 {
+    color: white;
+    font-size: 1.8rem;
+    color: $white-clear;
+    a {
+      color: $white;
+      &:hover {
+        color: $brand-color-light;
+      }
+    }
+  }
+  .more-scroll {
+    position: absolute;
+    z-index: 50;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: $brand-color;
+    font-size: 3rem;
+    animation: pulse 2s infinite;
+    &:hover {
+      opacity: 1;
+      animation: none;
+    }
+    @keyframes pulse {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: .4;
+      }
+    }
+  }
+}
+.proj-list {
+  .proj-card {
+    position: relative;
+    //min-height: 255px;
+    width: 100%;
+    overflow: hidden;
+    background-color: $white;
+    margin-bottom: 3rem;
+    img {
+      cursor: pointer;
+      transition: ease all .2s;
+      width: 100%;
+      &:hover {
+        opacity: .8;
+      }
+    }
+    .caption {
+      position: relative;
+      z-index: 10;
+      text-align: left;
+      padding: 2.8rem;
+      .card-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+  .art-card {
+    @extend .proj-card;
+    transition: ease all .2s;
+    &:hover {
+      opacity: .8; // images jiggle when doing opacity for some reason
+    }
+    img {
+      width: 100%;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  /*
+  .proj-desc {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-align: left;
+    padding-bottom: 4rem;
+  }*/
+}
+// Home [END]
+
+// Footer [START]
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    padding: 2rem 0;
+  }
+  a {
+    margin-left: 1rem;
+    font-size: 2rem;
+  }
+}
+// Footer [END]
+
+// FeatherLight [START]
+.featherlight .featherlight-content {
+  padding: 1.5rem;
+  background-color: transparent;
+  color: $white;
+  position: static;
+  border-bottom: none;
+}
+// .featherlight-previous {
+//   z-index: 20;
+//   top: 0;
+//   left: 0rem;
+//   right: 90%;
+//   &:hover {
+//     background-color: rgba(255,255,255,.05);
+//   }
+// }
+// .featherlight-next {
+//   z-index: 20;
+//   top: 0;
+//   right: 0rem;
+//   left: 90%;
+//   &:hover {
+//     background-color: rgba(255,255,255,.05);
+//   }
+// }
+.f-box {
+  img {
+    max-height: 70vh;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto 1.5rem;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+// FeatherLight [END]

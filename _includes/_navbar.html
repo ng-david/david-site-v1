@@ -1,0 +1,56 @@
+<nav class="navbar navbar-toggleable-md">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a
+          class="nav-link scroll-link"
+          href="#about"
+          onclick="sendLinkEvent('GOTO About (Navbar)')"
+        >
+          About
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link scroll-link"
+          href="#projects"
+          onclick="sendLinkEvent('GOTO Projects (Navbar)')"
+        >
+          Projects
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link scroll-link"
+          href="#design"
+          onclick="sendLinkEvent('GOTO Art & Design (Navbar)')"
+        >
+          Art & Design
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link scroll-link"
+          href="#contact"
+          onclick="sendLinkEvent('GOTO Contact (Navbar)')"
+        >
+          Contact
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link scroll-link"
+          target="_blank"
+          href="{{ site.baseurl }}/Resume_DavidNg.pdf"
+          onclick="sendLinkEvent('GOTO Davids Resume (Navbar)')"
+        >
+          Resume
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,39 @@
+.dark-section {
+  background-color: $dark-bg;
+  color: $white;
+  p {
+    color: $white-clear;
+  }
+  strong {
+    color: $white;
+  }
+}
+.medium-section {
+  background-color: #444a4d;
+  color: $white;
+  p {
+    color: $white-clear;
+  }
+  strong {
+    color: $white;
+  }
+}
+.darkest-section {
+  background-color: $darkest-bg;
+  color: $white;
+  p {
+    color: $white-clear;
+  }
+  strong {
+    color: $white;
+  }
+}
+.light-section {
+  background-color: #f7f7f7;
+}
+.white-section {
+  background-color: $white;
+}
+.sub-section {
+  margin-bottom: 8rem;
+}

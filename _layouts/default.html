@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- redirect to https -->
+  <!-- <script>
+    var host = "ngdavid.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+  </script> -->
+  {% include _head.html %}
+  <body>
+    {% include _navbar.html %}
+    {{ content }}
+    {% include _footer.html %}
+    {% include _scripts.html %}
+  </body>
+</html>
